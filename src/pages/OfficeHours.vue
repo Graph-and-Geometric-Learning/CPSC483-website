@@ -2,9 +2,8 @@
     <v-container>
         <v-row>
             <v-col>
-                <v-sheet>
+                <v-sheet class="pa-8" elevation="6">
                     <FullCalendar :options="calendarOptions" />
-
                 </v-sheet>
             </v-col>
         </v-row>
@@ -26,6 +25,7 @@ export default {
             calendarOptions: {
                 plugins: [dayGridPlugin, interactionPlugin],
                 initialView: 'dayGridMonth',
+                contentHeight: 500,
                 events: [
                     { title: 'Rex Ying', date: '2022-08-24' }
                 ]
@@ -38,9 +38,6 @@ export default {
 
 <style>
 
-.fc-today-buttom .fc-button-primary {
-    background: #FF0000;
-}
 
 .fc .fc-button-primary {
     background-color: #455A64;

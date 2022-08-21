@@ -2,7 +2,7 @@
     <v-container>
         <v-row>
             <v-col>
-                <v-sheet class="pa-4" elevation="6">
+                <v-sheet class="pa-8" elevation="6">
                     <h1>Grading</h1>
 
                     <ul>
@@ -42,7 +42,7 @@
         </v-row>
         <v-row>
             <v-col>
-                <v-sheet class="pa-4" elevation="6">
+                <v-sheet class="pa-8" elevation="6">
                     <h1>Homework</h1>
                     <ul>
                         <li>Assignments tak time. Start early!
@@ -70,7 +70,7 @@
         </v-row>
         <v-row>
             <v-col>
-                <v-sheet class="pa-4" elevation="6">
+                <v-sheet class="pa-8" elevation="6">
                     <h1>Honor Code</h1>
                     We strictly enforce the <a
                         href="https://academiccontinuity.yale.edu/academic-integrity-honor-codes">Yale Honor Code</a>.
@@ -98,7 +98,7 @@
         </v-row>
         <v-row>
             <v-col>
-                <v-sheet class="pa-4" elevation="6">
+                <v-sheet class="pa-8" elevation="6">
                     <h1>Projects</h1>
                     Course project includes:
                     <ul>

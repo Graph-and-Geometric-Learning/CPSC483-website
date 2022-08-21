@@ -4,6 +4,7 @@ import Content from '../pages/Content.vue'
 import Schedule from '../pages/Schedule.vue'
 import Policies from '../pages/Policies.vue'
 import OfficeHours from '../pages/OfficeHours.vue'
+import Staff from '../pages/Staff.vue'
 
 const router = createRouter({
     base: import.meta.env.BASE_URL,
@@ -32,6 +33,9 @@ const router = createRouter({
         {
             path: '/officehours',
             component: OfficeHours,
+        }, {
+            path: '/staff',
+            component: Staff
         }
     ]
 })

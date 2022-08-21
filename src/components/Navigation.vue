@@ -21,6 +21,7 @@ export default {
         drawer: true,
         pages: [
             { prepend_icon: "mdi-graphql", title: "Logistics", value: "logistics" },
+            { prepend_icon: "mdi-account-multiple", title: "Staff", value: "staff" },
             // { prepend_icon: "mdi-folder", title: "Content", value:"content" },
             { prepend_icon: "mdi-calendar", title: "Schedule", value: "schedule" },
             { prepend_icon: "mdi-text-box-remove-outline", title: "Policies", value: "policies" },

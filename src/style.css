@@ -35,7 +35,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  /* display: flex; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -44,6 +44,12 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 button {
@@ -73,7 +79,7 @@ button:focus-visible {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 @media (prefers-color-scheme: light) {

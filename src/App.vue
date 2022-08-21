@@ -30,9 +30,4 @@ export default {
 ul {
     padding-left: 20px;
 }
-
-ul.bold {
-  font-weight: bold;
-}
-
 </style>

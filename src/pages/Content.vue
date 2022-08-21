@@ -2,7 +2,7 @@
     <v-container>
         <v-row>
             <v-col>
-                <v-sheet class="pa-4" elevation="6">
+                <v-sheet class="pa-8" elevation="6">
                     <h1>Course Description</h1>
                     <p>
                         Graph structure emerges in many important domain applications, including but not limited to
@@ -27,7 +27,7 @@
         </v-row>
         <v-row>
             <v-col>
-            <v-sheet class="pa-4" elevation="6">
+            <v-sheet class="pa-8" elevation="6">
                 <h1>Prerequisites</h1>
                 CPSC 201, CPSC 223, and one of CPSC 365 or CPSC 366. Knowledge of graphs as a data structure, and
                 understanding

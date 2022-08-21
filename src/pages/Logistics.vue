@@ -2,11 +2,12 @@
     <v-container>
         <v-row>
             <v-col>
-                <v-sheet class="pa-4" elevation="6">
+                <v-sheet class="pa-8" elevation="6">
                     <h1>Welcom to CPSC 483!</h1>
                     <ul>
                         <li>Lectures are on Monday/Wednesday 11:35AM - 12:50PM EDT in <a
-                                href="https://map.yale.edu/place/building/AKW?">AKW 100 - Arthur K. Watson Hall 100
+                                href="https://cpsc.yale.edu/department-information/yale-computer-science-faq/computer-science-department-akw">AKW
+                                100 - Arthur K. Watson Hall 100
                             </a>.</li>
                         <ul>
                             <li>Most of the lecture will be in-person</li>
@@ -31,7 +32,37 @@
         </v-row>
         <v-row>
             <v-col>
-                <v-sheet class="pa-4" elevation="6">
+                <v-sheet class="pa-8" elevation="6">
+                    <h1>Prerequisites</h1>
+                    <ul>
+                        <li>The course has relevance to a wide range of topics and background in graph or ML is always
+                            helpful</li>
+                        <li>Minimum prerequisites
+                            <ul>
+                                <li>CPSC 201, 203 and one of 365 and 366.</li>
+                                <li>Nice-to-have background (have taken a course or have done research)
+                                    <ul>
+                                        <li>machine Learning</li>
+                                        <li>algorithm and graph theory</li>
+                                        <li>probability and statistics.</li>
+                                    </ul>
+                                </li>
+                                <li>Programming <ul>
+                                        <li>You should be able to write non-trivial programs (in <b>Python</b>), as well
+                                            as knowledge about common libaries such as NumPy, Pandas, etc.</li>
+                                        <li>Ideally you have used <b>PyTorch</b> (or equivalent) before. But learning it
+                                            is not too hard if you have good knowledge in machine learning.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </v-sheet>
+            </v-col>
+        </v-row>
+        <v-row>
+            <v-col>
+                <v-sheet class="pa-8" elevation="6">
                     <h1>Readings</h1>
                     <p><a href="https://www.cs.mcgill.ca/~wlh/grl_book/">Graph Representation Learning Book</a> by Will
                         Hamilton</p>
@@ -56,7 +87,7 @@
         </v-row>
         <v-row>
             <v-col>
-                <v-sheet class="pa-4" elevation="6">
+                <v-sheet class="pa-8" elevation="6">
                     <h1>Communication</h1>
                     <h2>Piazza Q&A website</h2>
                     <ul>
@@ -69,63 +100,41 @@
                     <h2>Office Hours</h2>
                     <p>Refer to <a :href="BASE_URL+'officehours'">Office Hours</a>.</p>
 
-                    <h4>We will post course annoucements to this website. Make sure you check it regularly. </h4>
+                    <h3>We will post course annoucements to this website. Make sure you check it regularly. </h3>
                 </v-sheet>
             </v-col>
         </v-row>
         <v-row>
             <v-col>
-                <v-sheet class="pa-4" elevation="6">
-                    <h1>Teaching Staff</h1>
-                    <h2>Instructor</h2>
-                    <v-row>
-                        <v-col>
-                            <v-card max-width="384px" class="ma-4">
-                                <v-img src="https://cs.stanford.edu/people/rexy/images/photo_Rex.jpg" width="384px" height="384px"
-                                    cover>
-                                </v-img>
-                                <v-card-title>Rex Ying</v-card-title>
-                            </v-card>
-                        </v-col>
-                    </v-row>
-                    <v-divider></v-divider>
-                    <h2>Teaching Assistants</h2>
-                    <v-row v-for="i in 2">
-                        <v-col v-for="j in 3">
-                            <v-card max-width="256px" class="ma-4">
-                                <v-img src="https://cs.stanford.edu/people/rexy/images/photo_Rex.jpg" width="256px" height="256px"
-                                    cover>
-                                </v-img>
-                                <v-card-title>Rex Ying</v-card-title>
-                            </v-card>
-                        </v-col>
-                    </v-row>
-                    <h2>Guest Lecturer</h2>
-                    <v-row>
-                        <v-col>
-                            <v-card max-width="256px" class="ma-4">
-                                <v-img
-                                    src="https://files-profile.medicine.yale.edu/images/9163a24e-9d34-48ef-98fa-dc0664163c47"
-                                    height="256px" width="384px" cover>
-                                </v-img>
-                                <v-card-title>Smita Krishnaswamy
-                                </v-card-title>
-                            </v-card>
-                        </v-col>
-                        <v-col>
-                            <v-card max-width="256px" class="ma-4">
-                                <v-img src="https://avatars.githubusercontent.com/u/6945922?v=4" width="384px" height="256px" cover>
-                                </v-img>
-                                <v-card-title>Matthias Fey
-                                </v-card-title>
-                            </v-card>
-                        </v-col>
-                    </v-row>
+                <v-sheet class="pa-8" elevation="6">
+                    <h1>Graph Machine Learning Tools</h1>
+                    <ul>
+                        <li>We use <a href="https://github.com/rusty1s/pytorch_geometric">PyTorch Geometric (PyG)</a>
+                        </li>
+                        <li>We further recommend:
+                            <ul>
+                                <li><a href="https://github.com/snap-stanford/deepsnap">DeepSnap</a>: Libary that
+                                    assists
+                                    deep learning on graphs.</li>
+                                <li><a href="https://github.com/snap-stanford/GraphGym">GraphGym</a>: Platform for
+                                    designing Graph Neural Networks.</li>
+                                Both platforms are very helpful for the course project (save your time & provide
+                                advanced GNN funcionalities)
+                            </ul>
+                        </li>
+                        <li>Other network analytics tools:
+                            <ul>
+                                <li><a href="https://snap.stanford.edu/snappy/">SNAP.PY</a></li>
+                                <li><a href="https://networkx.org/">NetworkX</a></li>
+                                <li><a href="https://graph-tool.skewed.de/">Graph-Tool</a></li>
+                                <li><a href="https://graphviz.org/">Graphvis</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
                 </v-sheet>
             </v-col>
-
         </v-row>
-
     </v-container>
 </template>
 
