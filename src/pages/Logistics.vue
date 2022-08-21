@@ -66,8 +66,10 @@
                     <h2>Mailing List</h2>
                     TODO
 
-                    <p>We will post course annoucements to this website. Make sure you check it regularly. </p>
-                    <p>Also refer to TODO office hour</p>
+                    <h2>Office Hours</h2>
+                    <p>Refer to <a :href="BASE_URL+'officehours'">Office Hours</a>.</p>
+
+                    <h4>We will post course annoucements to this website. Make sure you check it regularly. </h4>
                 </v-sheet>
             </v-col>
         </v-row>
@@ -79,7 +81,7 @@
                     <v-row>
                         <v-col>
                             <v-card max-width="384px" class="ma-4">
-                                <v-img src="https://cs.stanford.edu/people/rexy/images/photo_Rex.jpg" width="384px"
+                                <v-img src="https://cs.stanford.edu/people/rexy/images/photo_Rex.jpg" width="384px" height="384px"
                                     cover>
                                 </v-img>
                                 <v-card-title>Rex Ying</v-card-title>
@@ -91,7 +93,7 @@
                     <v-row v-for="i in 2">
                         <v-col v-for="j in 3">
                             <v-card max-width="256px" class="ma-4">
-                                <v-img src="https://cs.stanford.edu/people/rexy/images/photo_Rex.jpg" width="256px"
+                                <v-img src="https://cs.stanford.edu/people/rexy/images/photo_Rex.jpg" width="256px" height="256px"
                                     cover>
                                 </v-img>
                                 <v-card-title>Rex Ying</v-card-title>
@@ -101,7 +103,7 @@
                     <h2>Guest Lecturer</h2>
                     <v-row>
                         <v-col>
-                            <v-card max-width="384px" class="ma-4">
+                            <v-card max-width="256px" class="ma-4">
                                 <v-img
                                     src="https://files-profile.medicine.yale.edu/images/9163a24e-9d34-48ef-98fa-dc0664163c47"
                                     height="256px" width="384px" cover>
@@ -111,7 +113,7 @@
                             </v-card>
                         </v-col>
                         <v-col>
-                            <v-card max-width="384px" class="ma-4">
+                            <v-card max-width="256px" class="ma-4">
                                 <v-img src="https://avatars.githubusercontent.com/u/6945922?v=4" width="384px" height="256px" cover>
                                 </v-img>
                                 <v-card-title>Matthias Fey
@@ -129,4 +131,12 @@
 
 <script>
 import Todo from '../components/Todo.vue';
+
+export default {
+    data() {
+        return {
+            BASE_URL: import.meta.env.BASE_URL
+        }
+    }
+}
 </script>

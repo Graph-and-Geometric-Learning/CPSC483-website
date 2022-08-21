@@ -30,31 +30,40 @@ export default {
     name: "Schedule",
     data: () => ({
         items: [
-            {
+            {   
+                date: "Wed 08/31",
                 lecture: "Background: Machine Learning and Graphs as Data Structure",
             },
-            {
+            {   
+                date: "Fri 09/02",
                 lecture: "Plethora of Tasks and Features on Graphs",
             },
             {
+                date: "Wed 09/07",
                 lecture: "Graph Neural Networks Models",
             },
             {
+                date: "Mon 09/12",
                 lecture: "Graph Neural Networks Designs",
             },
             {
+                date: "Wed 09/14",
                 lecture: "GNN Objectives and Loss Functions",
             },
             {
+                date: "Mon 09/19",
                 lecture: "GNN Implementations, Training and Inference",
             },
             {
+                date: "Wed 09/21",
                 lecture: "Graph Attention Networks",
             },
             {
+                date: "Mon 09/26",
                 lecture: "Scalable GNN Architectures",
             },
             {
+                date: "Wed 09/28",
                 lecture: "Multi-hop GNNs and Multi-hop Attentions",
             },
             {

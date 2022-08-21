@@ -8,6 +8,8 @@
             <v-list-item v-for="page in pages" :prepend-icon="page.prepend_icon" :title="page.title" :value="page.value"
                 :to="page.value" color="primary">
             </v-list-item>
+            <v-list-item prepend-icon="mdi-star" title="Canvas" value="canvas"
+                href="https://yale.instructure.com/courses/82622" color="primary"></v-list-item>
         </v-list>
     </v-navigation-drawer>
 </template> 
@@ -24,7 +26,7 @@ export default {
             { prepend_icon: "mdi-text-box-remove-outline", title: "Policies", value: "policies" },
             { prepend_icon: "mdi-office-building", title: "Office Hours", value: "officehours" },
             { prepend_icon: "mdi-help", title: "FAQ", value: "faq" },
-            { prepend_icon: "mdi-star", title: "Canvas", value: "canvas" },
+            // { prepend_icon: "mdi-star", title: "Canvas", value: "canvas" },
         ],
     }),
 }

@@ -6,8 +6,8 @@ import Policies from '../pages/Policies.vue'
 import OfficeHours from '../pages/OfficeHours.vue'
 
 const router = createRouter({
-    base: "/CPSC483-website",
-    history: createWebHistory("/CPSC483-website"),
+    base: import.meta.env.BASE_URL,
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
             path: '/',
