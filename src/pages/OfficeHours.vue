@@ -36,7 +36,7 @@ function getRepeatDates(start, end, day) {
 export default {
     components: { VueCal },
     data: () => ({
-        events: getRepeatDates("2022-08-24", "2022-12-29", 3)
+        events: getRepeatDates("2022-08-31", "2022-12-29", 3)
     })
 }
 </script>
