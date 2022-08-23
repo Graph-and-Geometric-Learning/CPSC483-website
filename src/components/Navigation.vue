@@ -23,7 +23,7 @@ export default {
             { prepend_icon: "mdi-graphql", title: "Logistics", value: "logistics" },
             { prepend_icon: "mdi-account-multiple", title: "Staff", value: "staff" },
             // { prepend_icon: "mdi-folder", title: "Content", value:"content" },
-            { prepend_icon: "mdi-calendar", title: "Schedule", value: "schedule" },
+            { prepend_icon: "mdi-calendar", title: "Syllabus", value: "syllabus" },
             { prepend_icon: "mdi-text-box-remove-outline", title: "Policies", value: "policies" },
             { prepend_icon: "mdi-office-building", title: "Office Hours", value: "officehours" },
             { prepend_icon: "mdi-help", title: "FAQ", value: "faq" },
@@ -32,3 +32,9 @@ export default {
     }),
 }
 </script>
+
+<style scoped>
+a:hover {
+    color: #000000
+}
+</style>

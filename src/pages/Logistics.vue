@@ -8,16 +8,11 @@
                         <li>Lectures are on Monday/Wednesday 11:35AM - 12:50PM EDT in <a
                                 href="https://cpsc.yale.edu/department-information/yale-computer-science-faq/computer-science-department-akw">AKW
                                 100 - Arthur K. Watson Hall 100
-                            </a>.</li>
+                            </a>.
                         <ul>
-                            <li>Most of the lecture will be in-person</li>
-                            <li>There will be 2-3 guest lectures, some of which might be held remotely, including GNN
-                                library applications of graph learning.</li>
-                        </ul>
-                        <li>
-                            Lecture Video are available on <a href="https://canvas.yale.edu/">Canvas</a> for all the
-                            enrolled Yale students.
-                        </li>
+                            <li>Most of the lecture will be in-person.</li>
+                            <li>There will be 2-3 guest lectures, some of which might be held remotely, including GNN library applications of graph learning.</li>
+                        </ul></li>
                         <li>This is a new course, and feedbacks are especially welcomed!
                             <ul>
                                 <li>Many of the content comes from relatively recent research (>2017)</li>
@@ -39,17 +34,17 @@
                             helpful</li>
                         <li>Minimum prerequisites
                             <ul>
-                                <li>CPSC 201, 203 and one of 365 and 366.</li>
+                                <li><a href="https://courses.yale.edu/?keyword=CPSC%20201&srcdb=999999">CPSC 201</a>, <a href="https://courses.yale.edu/?keyword=CPSC%20223&srcdb=999999">CPSC 223</a> and one of <a href="https://courses.yale.edu/?keyword=CPSC%20365&srcdb=999999">CPSC 365</a> and <a href="https://courses.yale.edu/?keyword=CPSC%20366&srcdb=999999">CPSC 366</a>.</li>
                                 <li>Nice-to-have background (have taken a course or have done research)
                                     <ul>
-                                        <li>machine Learning</li>
+                                        <li>machine Learning (minimum: high familiarity with linear algebra and multi-variable calculus)</li>
                                         <li>algorithm and graph theory</li>
-                                        <li>probability and statistics.</li>
+                                        <li>probability and statistics</li>
                                     </ul>
                                 </li>
                                 <li>Programming <ul>
                                         <li>You should be able to write non-trivial programs (in <b>Python</b>), as well
-                                            as knowledge about common libaries such as NumPy, Pandas, etc.</li>
+                                            as knowledge about common libaries such as NumPy (<b>Vectorization</b>), Pandas, etc.</li>
                                         <li>Ideally you have used <b>PyTorch</b> (or equivalent) before. But learning it
                                             is not too hard if you have good knowledge in machine learning.</li>
                                     </ul>
@@ -64,12 +59,16 @@
             <v-col>
                 <v-sheet class="pa-8" elevation="6">
                     <h1>Readings</h1>
-                    <p><a href="https://www.cs.mcgill.ca/~wlh/grl_book/">Graph Representation Learning Book</a> by Will
-                        Hamilton</p>
-                    <p>Research papers</p>
+                    <h2>Recommended Readings</h2>
+                    <ul>
+                        <li>PyTorch <a href="https://pytorch.org/docs/stable/index.html">documentation</a> and <a href="https://pytorch.org/tutorials/">tutorial</a></li>
+                        <li><a href="https://www.cs.mcgill.ca/~wlh/grl_book/">Graph Representation Learning Book</a> by Will
+                        Hamilton</li>
+                        <li>Research papers</li>
+                    </ul>
                     <h2>Optional Readings</h2>
                     <ul>
-                        <li>TODO</li>
+                        <li>Please see <a :href="BASE_URL+'#/syllabus'">syllabus</a></li>
                         These will be very useful for course projects.
                     </ul>
                     <h2>
@@ -91,14 +90,24 @@
                     <h1>Communication</h1>
                     <h2>Piazza Q&A website</h2>
                     <ul>
-                        <li>TODO</li>
-                        <li>Please participate and help each other</li>
+                        <li>Sign up <a href="piazza.com/yale/fall2022/cpsc483">Piazza</a> with your @yale.edu email.</li>
+                        <li>Please participate and help each other, but
+                            <ul>
+                                <li>Annotate your questions</li>
+                                <li>Search for answers before you ask</li>
+                                <li>Don't post code</li>
+                            </ul>
+                        </li>
+                        <li><b>We do not encourage private posts on Piazza</b> as they reduce the efficience with which we serve all students.</li>
                     </ul>
                     <h2>Mailing List</h2>
-                    TODO
+                    <ul>
+                        <li>Teaching staff: <a
+                                href="mailto:cpsc483_staff@mailman.yale.edu">cpsc483_staff@mailman.yale.edu</a></li>
+                    </ul>
 
                     <h2>Office Hours</h2>
-                    <p>Refer to <a :href="BASE_URL+'officehours'">Office Hours</a>.</p>
+                    <p>Refer to <a :href="BASE_URL+'#/officehours'">Office Hours</a>.</p>
 
                     <h3>We will post course annoucements to this website. Make sure you check it regularly. </h3>
                 </v-sheet>
@@ -116,7 +125,9 @@
                                 <li><a href="https://github.com/snap-stanford/deepsnap">DeepSnap</a>: Libary that
                                     assists
                                     deep learning on graphs.</li>
-                                <li><a href="https://github.com/snap-stanford/GraphGym">GraphGym</a>: Platform for
+                                <li><a
+                                        href="https://pytorch-geometric.readthedocs.io/en/latest/notes/graphgym.html">GraphGym</a>:
+                                    Platform for
                                     designing Graph Neural Networks.</li>
                                 Both platforms are very helpful for the course project (save your time & provide
                                 advanced GNN funcionalities)

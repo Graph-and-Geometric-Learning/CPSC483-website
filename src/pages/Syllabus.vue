@@ -7,6 +7,8 @@
                     <tr>
                         <th>Date</th>
                         <th>Lecture</th>
+                        <th>Slides</th>
+                        <th>Readings</th>
                         <th>Events</th>
                         <th>Deadlines</th>
                     </tr>
@@ -15,6 +17,8 @@
                     <tr v-for="item in items">
                         <td>{{item.date}}</td>
                         <td>{{item.lecture}}</td>
+                        <td>{{item.slide}}</td>
+                        <td>{{item.reading}}</td>
                         <td>{{item.event}}</td>
                         <td>{{item.deadline}}</td>
                     </tr>
@@ -27,7 +31,7 @@
 
 <script>
 export default {
-    name: "Schedule",
+    name: "Syllabus",
     data: () => ({
         items: [
             {   
@@ -67,51 +71,67 @@ export default {
                 lecture: "Multi-hop GNNs and Multi-hop Attentions",
             },
             {
+                date: "Mon 10/03",
                 lecture: "Theory of Graph Neural Networks",
             },
             {
+                date: "Wed 10/05",
                 lecture: "PyTorch Geometric Library (virtual)",
             },
             {
+                date: "Mon 10/10",
                 lecture: "Graph Generative Models",
             },
             {
+                date: "Wed 10/12",
                 lecture: "Explaining GNN Predictions",
             },
             {
+                date: "Mon 10/17",
                 lecture: "Self-supervised Learning with GNNs",
             },
             {
+                date: "Wed 10/19",
                 lecture: "Spectral GNNs",
             },
             {
+                date: "Mon 10/24",
                 lecture: "Distributed Node Embeddings",
             },
             {
+                date: "Wed 10/26",
                 lecture: "Geometric Embeddings: Order and Box Embeddings",
             },
             {
+                date: "Mon 10/31",
                 lecture: "Hyperbolic Embeddings and Hyperbolic GNNs",
             },
             {
+                date: "Mon 11/07",
                 lecture: "GNN AutoML",
             },
             {
+                date: "Wed 11/09",
                 lecture: "Learning on Dynamic Graphs",
             },
             {
+                date: "Mon 11/14",
                 lecture: "Heterogeneous Graphs for Social Networks and Recommender Systems",
             },
             {
+                date: "Wed 11/16",
                 lecture: "Knowledge Graph Reasoning",
             },
             {
+                date: "Mon 11/21",
                 lecture: "Knowledge Graph Embeddings in Hyperbolic Spaces",
             },
             {
+                date: "Wed 11/23",
                 lecture: "Applications of Graph Learning in Biology and Medicine",
             },
             {
+                date: "Mon 11/28",
                 lecture: "Applications in Graphics and Scientific Simulations",
             },
         ]

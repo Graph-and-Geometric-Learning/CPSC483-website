@@ -6,22 +6,22 @@
                     <h1>Grading</h1>
 
                     <ul>
-                        <li>Homework: 30%
+                        <li><b>Homework</b>: 30%
                             <ul>
                                 <li>Homework 1, 2, 3, each worth 10%</li>
                             </ul>
                         </li>
-                        <li>Coding assignment: 20%
+                        <li><b>Coding assignment: 20%</b>
                             <ul>
                                 <li>4 (short) coding assignments using Google Colab / Jupyter Notebook</li>
                             </ul>
                         </li>
-                        <li>Exam (during the last lecture): 20%
+                        <li><b>Exam (during the last lecture): 20%</b>
                             <ul>
                                 <li>Light-weight 1 hour exam (closed book).</li>
                             </ul>
                         </li>
-                        <li>Course Project: 30%
+                        <li><b>Course Project</b>: 30%
                             <ul>
                                 <li>Proposal: 30%
                                 </li>
@@ -29,7 +29,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>Extra Credit: code contribution: up to 10%
+                        <li><b>Extra Credit: code contribution</b>: up to 10%
                             <ul>
                                 <li>Opensource contributions: PyG, new library / public benchmarks related to the course
                                 </li>
@@ -45,16 +45,16 @@
                 <v-sheet class="pa-8" elevation="6">
                     <h1>Homework</h1>
                     <ul>
-                        <li>Assignments tak time. Start early!
+                        <li>Assignments take time. <b>Start early!</b>
                             <ul>
                                 <li>A combination of data analysis, algorithm design and math.</li>
                             </ul>
                         </li>
                         <li>How to submit?
                             <ul>
-                                <li>Canvas</li>
+                                <li><a href="https://yale.instructure.com/courses/82622">Canvas</a></li>
                                 <li>Both homework (including code) and project deliverables (pdf) must be uploaded</li>
-                                <li>We prefer LaTeX submissions</li>
+                                <li>We prefer <em>LaTeX</em> submissions</li>
                                 <li>If you really need to use hand-writing, make sure it's readable. TAs have no
                                     obligations to use magnifying glasses to figure out what you write.</li>
                             </ul>

@@ -16,7 +16,9 @@
     "@mdi/font": "5.9.55",
     "roboto-fontface": "*",
     "vue": "^3.2.37",
+    "vue-cal": "^4.3.4",
     "vue-router": "^4.1.3",
+    "vue-simple-calendar": "^6.0.7",
     "vuetify": "^3.0.0-beta.0",
     "webfontloader": "^1.0.0"
   },

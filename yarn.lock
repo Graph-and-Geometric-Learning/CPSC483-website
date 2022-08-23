@@ -1027,6 +1027,11 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
+"vue-cal@^4.3.4":
+  "integrity" "sha512-nfm/jBbTjF6BzYInu+JYoQP3LsMyOSYt29x9bmStelBHEzJjP49YjJauwUCWuEV2q82U3fp/1vW+S99DiiW8Tg=="
+  "resolved" "https://registry.npmjs.org/vue-cal/-/vue-cal-4.3.4.tgz"
+  "version" "4.3.4"
+
 "vue-cli-plugin-vuetify@~2.5.4":
   "integrity" "sha512-6o65u4yfXixxesWlBefSo2BbMbp5/vjin6+ymnJR0SGCiw20n+SdBbWhuvYTkPXMx3p8r4lqV0YVTrQ08z5p9g=="
   "resolved" "https://registry.npmmirror.com/vue-cli-plugin-vuetify/-/vue-cli-plugin-vuetify-2.5.4.tgz"
@@ -1043,7 +1048,14 @@
   dependencies:
     "@vue/devtools-api" "^6.1.4"
 
-"vue@^3.0.0", "vue@^3.0.11", "vue@^3.2.0", "vue@^3.2.25", "vue@^3.2.37", "vue@3.2.37":
+"vue-simple-calendar@^6.0.7":
+  "integrity" "sha512-Ycen6v/FnrdeaC0wG793hZvaBGfOsyHBZg5lLdbGjjF7R8aZsDGW+07NArfxZgzVdpodukx6ud7w++QTDOXbOw=="
+  "resolved" "https://registry.npmjs.org/vue-simple-calendar/-/vue-simple-calendar-6.0.7.tgz"
+  "version" "6.0.7"
+  dependencies:
+    "vue" "^3.2.37"
+
+"vue@^2.6.14 || ^3.2.0", "vue@^3.0.0", "vue@^3.0.11", "vue@^3.2.0", "vue@^3.2.25", "vue@^3.2.37", "vue@3.2.37":
   "integrity" "sha512-bOKEZxrm8Eh+fveCqS1/NkG/n6aMidsI6hahas7pa0w/l7jkbssJVsRhVDs07IdDq7h9KHswZOgItnwJAgtVtQ=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.2.37.tgz"
   "version" "3.2.37"
