@@ -23,6 +23,11 @@ function getRepeatDates(start, end, day) {
     while (start_date < end_date) {
         start_date.setDate(start_date.getDate() + (((day + 7 - start_date.getDay()) % 7) || 7))
         var date = start_date.getFullYear() + '-' + String(start_date.getMonth()+1).padStart(2, '0') + '-' + String(start_date.getDate()).padStart(2, '0')
+        if (
+            (date !== "2022-09-21") &&
+            (date !== "2022-10-19") &&
+            (date !== "2022-11-23")
+        )
         dates.push({
             title: 'Rex Ying',
             start: date + ' 14:00',
@@ -36,7 +41,7 @@ function getRepeatDates(start, end, day) {
 export default {
     components: { VueCal },
     data: () => ({
-        events: getRepeatDates("2022-08-31", "2022-12-29", 3)
+        events: getRepeatDates("2022-08-31", "2022-12-07", 3)
     })
 }
 </script>

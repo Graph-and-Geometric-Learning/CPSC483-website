@@ -59,79 +59,79 @@ export default {
                 lecture: "GNN Implementations, Training and Inference",
             },
             {
-                date: "Wed 09/21",
+                date: "Mon 09/26",
                 lecture: "Graph Attention Networks",
             },
             {
-                date: "Mon 09/26",
+                date: "Wed 09/28",
                 lecture: "Scalable GNN Architectures",
             },
             {
-                date: "Wed 09/28",
+                date: "Mon 10/03",
                 lecture: "Multi-hop GNNs and Multi-hop Attentions",
             },
             {
-                date: "Mon 10/03",
+                date: "Wed 10/05",
                 lecture: "Theory of Graph Neural Networks",
             },
             {
-                date: "Wed 10/05",
+                date: "Mon 10/10",
                 lecture: "PyTorch Geometric Library (virtual)",
             },
             {
-                date: "Mon 10/10",
+                date: "Wed 10/12",
                 lecture: "Graph Generative Models",
             },
             {
-                date: "Wed 10/12",
+                date: "Mon 10/17",
                 lecture: "Explaining GNN Predictions",
             },
             {
-                date: "Mon 10/17",
+                date: "Mon 10/24",
                 lecture: "Self-supervised Learning with GNNs",
             },
             {
-                date: "Wed 10/19",
+                date: "Wed 10/26",
                 lecture: "Spectral GNNs",
             },
             {
-                date: "Mon 10/24",
+                date: "Mon 10/31",
                 lecture: "Distributed Node Embeddings",
             },
             {
-                date: "Wed 10/26",
+                date: "Wed 11/02",
                 lecture: "Geometric Embeddings: Order and Box Embeddings",
             },
             {
-                date: "Mon 10/31",
+                date: "Mon 11/07",
                 lecture: "Hyperbolic Embeddings and Hyperbolic GNNs",
             },
             {
-                date: "Mon 11/07",
+                date: "Wed 11/09",
                 lecture: "GNN AutoML",
             },
             {
-                date: "Wed 11/09",
+                date: "Mon 11/14",
                 lecture: "Learning on Dynamic Graphs",
             },
             {
-                date: "Mon 11/14",
+                date: "Wed 11/16",
                 lecture: "Heterogeneous Graphs for Social Networks and Recommender Systems",
             },
             {
-                date: "Wed 11/16",
+                date: "Mon 11/28",
                 lecture: "Knowledge Graph Reasoning",
             },
             {
-                date: "Mon 11/21",
+                date: "Wed 11/30",
                 lecture: "Knowledge Graph Embeddings in Hyperbolic Spaces",
             },
             {
-                date: "Wed 11/23",
+                date: "Mon 12/05",
                 lecture: "Applications of Graph Learning in Biology and Medicine",
             },
             {
-                date: "Mon 11/28",
+                date: "Wed 12/07",
                 lecture: "Applications in Graphics and Scientific Simulations",
             },
         ]
