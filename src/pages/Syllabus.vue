@@ -52,27 +52,27 @@ export default {
             },
             {
                 date: "Wed 09/14",
-                lecture: "GNN Objectives and Loss Functions",
+                lecture: "GNN Implementations, Objectives and Loss Functions",
             },
             {
                 date: "Mon 09/19",
-                lecture: "GNN Implementations, Training and Inference",
-            },
-            {
-                date: "Mon 09/26",
                 lecture: "Graph Attention Networks",
             },
             {
-                date: "Wed 09/28",
+                date: "Mon 09/26",
                 lecture: "Scalable GNN Architectures",
             },
             {
-                date: "Mon 10/03",
+                date: "Wed 09/28",
                 lecture: "Multi-hop GNNs and Multi-hop Attentions",
             },
             {
-                date: "Wed 10/05",
+                date: "Mon 10/03",
                 lecture: "Theory of Graph Neural Networks",
+            },
+            {
+                date: "Wed 10/05",
+                lecture: "GNN Expressive Power",
             },
             {
                 date: "Mon 10/10",
@@ -84,7 +84,7 @@ export default {
             },
             {
                 date: "Mon 10/17",
-                lecture: "Explaining GNN Predictions",
+                lecture: "Spectral GNNs",
             },
             {
                 date: "Mon 10/24",
@@ -92,7 +92,7 @@ export default {
             },
             {
                 date: "Wed 10/26",
-                lecture: "Spectral GNNs",
+                lecture: "Explaining GNN Predictions",
             },
             {
                 date: "Mon 10/31",
