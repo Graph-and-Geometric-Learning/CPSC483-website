@@ -9,10 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fullcalendar/core": "^5.11.2",
-    "@fullcalendar/daygrid": "^5.11.2",
-    "@fullcalendar/interaction": "^5.11.2",
-    "@fullcalendar/vue3": "^5.11.2",
     "@mdi/font": "5.9.55",
     "roboto-fontface": "*",
     "vue": "^3.2.37",

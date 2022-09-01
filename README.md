@@ -1,7 +1,41 @@
-# Vue 3 + Vite
+# Overview
+This website is based on vue 3 + vite + vuetify. Vuetify as an UI component framework.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This repo has two branches, master and gh-pages.
+master branch corresponds to the root dierctory of this project, while gh-pages corresponds to `dist` folder. In other words, you should `git push` under the root directory, while `git push` under `dist` folder.
 
-## Recommended IDE Setup
+Therefore, to download the whole project, first 
+```shell
+git clone <the master branch>
+```
+then
+```shell
+mkdir dist
+cd dist
+```
+then
+```shell
+git clone <the gh-pages branch>
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+To build this project, you need to have node.js installed. All packages information are in `package.json`, you need to install them first.
+
+## Preview for development
+To preview the website locally,
+```shell
+npm run dev
+```
+and then open the link in the output.
+
+
+## Build
+```shell
+npm run build
+```
+This command will update `dist` folder. And then
+
+```shell
+cd dist
+git push origin master:gh-pages
+```
+which pushes the `dist` folder to `gh-pages` branch. Wait a moment for github to update the deployment.
