@@ -2,25 +2,17 @@
 This website is based on vue 3 + vite + vuetify. Vuetify as an UI component framework.
 
 This repo has two branches, master and gh-pages.
-master branch corresponds to the root dierctory of this project, while gh-pages corresponds to `dist` folder. In other words, you should `git push` under the root directory, while `git push` under `dist` folder.
+master branch corresponds to the root dierctory of this project (source code), while gh-pages corresponds to `dist` folder (distribution file). In other words, you should `git push` to update master branch under the root directory, while `git push` to update gh-pages under `dist` folder.
 
-Therefore, to download the whole project, first 
-```shell
-git clone <the master branch>
-```
-then
-```shell
-mkdir dist
-cd dist
-```
-then
-```shell
-git clone <the gh-pages branch>
-```
+To build this project, you need to have node.js installed. All packages information are in `package.json`, you need to install them (maybe it's `npm install`) before you build the project.
 
-To build this project, you need to have node.js installed. All packages information are in `package.json`, you need to install them first.
+Therefore, download the repo by
+1. ``git clone <master repo>``
+2. ``cd CPSC483-website``
+3. ``git clone <gh-pages repo>``
+4. ``mv CPSC483-website dist``
 
-## Preview for development
+# Preview for development
 To preview the website locally,
 ```shell
 npm run dev
@@ -28,14 +20,19 @@ npm run dev
 and then open the link in the output.
 
 
-## Build
+# Build
+To build and update the website (gh-pages branch)
 ```shell
 npm run build
 ```
-This command will update `dist` folder. And then
+This command will update the `dist` folder. And then
 
 ```shell
 cd dist
-git push origin master:gh-pages
+git add .
+git commit -m <message>
+git push
 ```
 which pushes the `dist` folder to `gh-pages` branch. Wait a moment for github to update the deployment.
+
+For master banch, you can commit and push under the root directory as normal.
