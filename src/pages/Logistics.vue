@@ -90,7 +90,7 @@
                     <h1>Communication</h1>
                     <h2>Piazza Q&A website</h2>
                     <ul>
-                        <li>Sign up <a href="piazza.com/yale/fall2022/cpsc483">Piazza</a> with your @yale.edu email.</li>
+                        <li>Sign up <a href="https://piazza.com/yale/fall2022/cpsc483">Piazza</a> with your @yale.edu email.</li>
                         <li>Please participate and help each other, but
                             <ul>
                                 <li>Annotate your questions</li>
