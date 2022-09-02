@@ -17,7 +17,7 @@
                     <tr v-for="item in items">
                         <td>{{item.date}}</td>
                         <td>{{item.lecture}}</td>
-                        <td>{{item.slide}}</td>
+                        <td><a v-if="item.slide" :href="item.slide">[pdf]</a></td>
                         <td>{{item.reading}}</td>
                         <td>{{item.event}}</td>
                         <td>{{item.deadline}}</td>
@@ -30,6 +30,7 @@
 </template>
 
 <script>
+import Slide1 from "../slides/01-intro.pdf"
 export default {
     name: "Syllabus",
     data: () => ({
@@ -37,6 +38,7 @@ export default {
             {   
                 date: "Wed 08/31",
                 lecture: "Background: Machine Learning and Graphs as Data Structure",
+                slide: Slide1,
             },
             {   
                 date: "Fri 09/02",
