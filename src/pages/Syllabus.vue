@@ -17,10 +17,12 @@
                     <tr v-for="item in items">
                         <td>{{item.date}}</td>
                         <td>{{item.lecture}}</td>
-                        <td><a v-if="item.slide" :href="item.slide">[pdf]</a></td>
-                        <td>{{item.reading}}</td>
-                        <td>{{item.event}}</td>
+                        <td><a v-if="item.slide" :href="item.slide">[Slides]</a></td>
+                        <td><a v-if="item.reading" :href="item.reading">[Readings]</a></td>
+                        <td><a v-if="item.event" :href="item.event">[HW Released]</a></td>
                         <td>{{item.deadline}}</td>
+                        <td><a v-if="item.hw" :href="item.hw">[HW DUE]</a></td>
+
                     </tr>
                 </tbody>
             </v-table>
@@ -31,6 +33,12 @@
 
 <script>
 import Slide1 from "../slides/01-intro.pdf"
+import Slide2 from "../slides/02-tasks.pdf"
+
+import reading2 from "../readings/02_Readings.pdf"
+
+import hw1_written from "../hw/Yale_CPSC483_hw1.pdf"
+
 export default {
     name: "Syllabus",
     data: () => ({
@@ -43,6 +51,9 @@ export default {
             {   
                 date: "Fri 09/02",
                 lecture: "Plethora of Tasks and Features on Graphs",
+                slide: Slide2,
+                event: hw1_written,
+                reading: reading2,
             },
             {
                 date: "Wed 09/07",
@@ -55,6 +66,11 @@ export default {
             {
                 date: "Wed 09/14",
                 lecture: "GNN Implementations, Objectives and Loss Functions",
+            },
+            {
+                date: "Fri 09/16",
+                deadline: "[Due]: HW1 - Written",
+                hw: hw1_written,
             },
             {
                 date: "Mon 09/19",
