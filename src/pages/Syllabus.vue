@@ -34,10 +34,12 @@
 <script>
 import Slide1 from "../slides/01-intro.pdf"
 import Slide2 from "../slides/02-tasks.pdf"
+import Slide3 from "../slides/03-GNN.pdf"
 
 import reading2 from "../readings/02_Readings.pdf"
+import reading3 from "../readings/lec3_readings.pdf"
 
-import hw1_written from "../hw/Yale_CPSC483_hw1.pdf"
+import hw1_written from "../hw/Yale_CPSC483_hw1_updated_2.pdf"
 
 export default {
     name: "Syllabus",
@@ -54,10 +56,13 @@ export default {
                 slide: Slide2,
                 event: hw1_written,
                 reading: reading2,
+
             },
             {
                 date: "Wed 09/07",
                 lecture: "Graph Neural Networks Models",
+                slide: Slide3,
+                reading: reading3
             },
             {
                 date: "Mon 09/12",
@@ -75,6 +80,10 @@ export default {
             {
                 date: "Mon 09/19",
                 lecture: "Graph Attention Networks",
+            },
+            {
+                date: "Wed 09/21",
+                deadline: "[Due]: HW1 - Colab",
             },
             {
                 date: "Mon 09/26",

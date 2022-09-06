@@ -5,7 +5,7 @@
         <v-sheet class="pa-8" elevation="6">
             <h1>Office Hours Calendar</h1>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<vue-cal style="height: 1000px;" :events="events" :disable-views="['years', 'year']" :time-cell-height="54" />
+<vue-cal style="height: 1000px;" :events="events" :disable-views="['years', 'year']" :time-from="9 * 60" :time-to="22 * 60" :time-cell-height="80" :on-event-click="onEventClick"/>
         </v-sheet>
         </v-col>
     </v-row>
@@ -16,7 +16,7 @@
 import VueCal from 'vue-cal'
 import 'vue-cal/dist/vuecal.css'
 
-function getRepeatDates(start, end, day) {
+function getRepeatDates(start, start_time, end, end_time, day, TITLE, LOCATION) {
     var dates = []
     var start_date = new Date(start)
     var end_date = new Date(end)
@@ -29,9 +29,10 @@ function getRepeatDates(start, end, day) {
             (date !== "2022-11-23")
         )
         dates.push({
-            title: 'Rex Ying',
-            start: date + ' 14:00',
-            end: date + ' 15:00',
+            title: TITLE,
+            start: date + start_time,
+            end: date + end_time,
+            content: LOCATION
         })
     }
     return dates
@@ -39,9 +40,15 @@ function getRepeatDates(start, end, day) {
 // console.log(getRepeatDates("2022-08-24", "2022-12-29", 3))
 
 export default {
+    selectedEvent: {},
     components: { VueCal },
     data: () => ({
-        events: getRepeatDates("2022-08-31", "2022-12-07", 3)
-    })
+        events: getRepeatDates("2022-08-31", " 14:00", "2022-12-07", " 15:00", 3, "Rex Ying OH", 'Dunham 226A')
+            .concat(getRepeatDates("2022-09-05", " 10:00", "2022-12-09", " 11:00", 1, "Chen OH", 'AKW 207'))
+            .concat(getRepeatDates("2022-09-05", " 18:00", "2022-12-09", " 19:00", 2, "Alec OH", 'Zoom'))
+            .concat(getRepeatDates("2022-09-05", " 13:00", "2022-12-09", " 14:00", 4, "Hannah OH", 'Bass L03'))
+            .concat(getRepeatDates("2022-09-05", " 15:00", "2022-12-09", " 16:00", 5, "Borui OH", 'YINS 3rd Floor'))
+        }),
+
 }
 </script>
