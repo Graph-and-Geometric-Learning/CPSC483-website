@@ -5,10 +5,7 @@
                 <v-sheet class="pa-8" elevation="6">
                     <h1>Welcom to CPSC 483!</h1>
                     <ul>
-                        <li>Lectures are on Monday/Wednesday 11:35AM - 12:50PM EDT in <a
-                                href="https://cpsc.yale.edu/department-information/yale-computer-science-faq/computer-science-department-akw">AKW
-                                100 - Arthur K. Watson Hall 100
-                            </a>.
+                        <li>Lectures are on Monday/Wednesday 11:35AM - 12:50PM EDT in LC 101.
                         <ul>
                             <li>Most of the lecture will be in-person.</li>
                             <li>There will be 2-3 guest lectures, some of which might be held remotely, including GNN library applications of graph learning.</li>

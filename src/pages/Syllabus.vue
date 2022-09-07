@@ -22,7 +22,6 @@
                         <td><a v-if="item.event" :href="item.event">[HW Released]</a></td>
                         <td>{{item.deadline}}</td>
                         <td><a v-if="item.hw" :href="item.hw">[HW DUE]</a></td>
-
                     </tr>
                 </tbody>
             </v-table>
@@ -82,7 +81,7 @@ export default {
                 lecture: "Graph Attention Networks",
             },
             {
-                date: "Wed 09/21",
+                date: "Tues 09/20",
                 deadline: "[Due]: HW1 - Colab",
             },
             {
